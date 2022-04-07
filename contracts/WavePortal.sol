@@ -25,7 +25,7 @@ contract WavePortal {
         waves.push(Wave(msg.sender, _message, block.timestamp));
         emit NewWave(msg.sender, block.timestamp, _message);
     }
-    function getAllwaves() public view returns (Wave[] memory) {
+    function getAllWaves() public view returns (Wave[] memory) {
         return waves;
     }
 
